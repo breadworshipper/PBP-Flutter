@@ -245,7 +245,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                         if (jenjangMagister)
                                           Text('Jenjang : Magister'),
                                         if (jenjangDoktor)
-                                          Text('Jenjang Doktor'),
+                                          Text('Jenjang : Doktor'),
 
                                         Text('Umur : ' + '$umur'),
                                         Text('Kelas PBP : ' + kelasPBP),
