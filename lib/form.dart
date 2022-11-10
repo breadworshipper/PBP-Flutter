@@ -238,9 +238,17 @@ class _MyFormPageState extends State<MyFormPage> {
                                         SizedBox(height: 20),
                                         // TODO: Munculkan informasi yang didapat dari form
                                         Text('Nama Lengkap: ' + _namaLengkap),
-                                        Text('Jenjang : '),
-                                        Text('Umur : '),
-                                        Text('Kelas PBP : '),
+                                        if (jenjangSarjana)
+                                          Text('Jenjang : Sarjana'),
+                                        if (jenjangDiploma)
+                                          Text('Jenjang : Diploma'),
+                                        if (jenjangMagister)
+                                          Text('Jenjang : Magister'),
+                                        if (jenjangDoktor)
+                                          Text('Jenjang Doktor'),
+
+                                        Text('Umur : ' + '$umur'),
+                                        Text('Kelas PBP : ' + kelasPBP),
                                         TextButton(
                                           onPressed: () {
                                             Navigator.pop(context);
